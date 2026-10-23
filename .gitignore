@@ -1,0 +1,7 @@
+# Compiled output
+bin/
+*.class
+
+# IDE files
+.vscode/
+.idea/
