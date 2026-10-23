@@ -1,7 +1,21 @@
 package calculadora;
 
+/**
+ * Representa a classe de testes da calculadora.
+ * <p>
+ * Executa os cenários de soma, subtração, multiplicação, divisão, divisão por zero
+ * e operação inválida, exibindo a entrada, o resultado esperado e o resultado obtido.
+ *
+ * @author Vítor Silva de Aguiar
+ * @version 1.0
+ */
 public class TesteCalculadora {
 
+    /**
+     * Executa os casos de teste da calculadora.
+     *
+     * @param args argumentos de linha de comando (não utilizados)
+     */
     public static void main(String[] args) {
         Calculadora calc = new Calculadora();
 
@@ -17,6 +31,7 @@ public class TesteCalculadora {
         System.out.println("Divisao: 8 / 2 | Esperado: 4");
         System.out.println("Obtido: " + calc.calcular(8, 2, "/"));
 
+        // Divisão por zero deve ser reportada como exceção, sem interromper o programa
         System.out.println("Divisao por zero: 8 / 0 | Esperado: IllegalArgumentException");
         try {
             System.out.println("Obtido: " + calc.calcular(8, 0, "/"));
@@ -24,6 +39,7 @@ public class TesteCalculadora {
             System.out.println("Obtido: excecao -> " + e.getMessage());
         }
 
+        // Operadores não suportados também devem ser reportados como exceção
         System.out.println("Operacao invalida: 5 x 5 | Esperado: IllegalArgumentException");
         try {
             System.out.println("Obtido: " + calc.calcular(5, 5, "x"));
