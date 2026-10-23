@@ -110,12 +110,11 @@ A aplicação deverá oferecer as seguintes operações:
 | Tecnologia | Versão | Utilização |
 |---|---|---|
 | Java | 21 | Desenvolvimento |
-| JDK | XX | Compilação |
-| JUnit | XX | Testes |
-| Git | XX | Controle de versão |
+| JDK | 21 | Compilação |
+| Git | 2.53.0.windows.1 | Controle de versão |
 | GitHub | — | Repositório remoto |
 | JavaDoc | — | Documentação |
-| IDE | XX | Ambiente de desenvolvimento |
+| IDE | Visual Studio Code | Ambiente de desenvolvimento |
 
 ---
 
@@ -143,3 +142,11 @@ projeto_calculadora/
 ├── README.md
 ├── .gitignore
 └── demais arquivos do projeto
+```
+---
+
+# 9. Testes
+
+Execução dos testes da versão original (branch `main`):
+
+![Teste original](images/testes/teste-original.png)
